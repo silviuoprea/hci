@@ -1,7 +1,334 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Ignition</h1>
-<p>Human Computer Interfaces decisions analysis.</p>
-</body>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <style>
+            img {
+                width: 75%;
+                height: 75%;
+            }
+            video {
+                width: 75%;
+                height: 75%;
+            }
+        </style>
+        <title>Ignition</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Human Computer Interface - App Design Analysis">
+        <meta name= "authors" content="Silviu Oprea">
+    </head>
+
+    <body>
+        <h1>Ignition</h1>
+        <h2>Table of contents</h2>
+        <ul> 
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#design">Design</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#prototype">WireFrame</a></li>
+            <li><a href="#demo">Demo</a></li>
+            <li><a href="#qoc">QOC - Questions, Options, Criteria</a></li>
+            <li><a href="#personas">Personas</a></li>
+        </ul>
+
+        <h3 id="introduction">Introduction</h3>
+            <p>
+                Ignition is an app designed to simulate a test drive
+                with certain parameters to be enabled or disable
+                to simulate conditions.
+            </p>
+        
+        <h3 id="design">Design</h3>
+            <p>Designed in FIGMA and implemented in Android Studio layout. Design is ambiental and relatively simplistic<p>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F42sy66YsEye9WRG7HpCGce%2FUntitled%3Fnode-id%3D1011%253A3348%26scaling%3Dscale-down%26page-id%3D4%253A0%26starting-point-node-id%3D1011%253A3423" allowfullscreen></iframe>
+            <img src="Prototype.PNG" alt="Prototype">
+
+        <h3 id="features">App features</h3>
+            <p>The following major functions are identified:</p>
+            <ul>
+                <li>Select destination to simulate drive</li>
+                <li>Increase/Decrease speed</li>
+                <li>Change configuration of the parameters in real-time affecting fuel consumption</li>
+                <li>Display report on phone screen</li>
+                <li>Export report of data to PDF</li>
+                <li>Share report to social media</li>
+            </ul>
+
+        <h3 id="prototype">WireFrame</h3>
+            <img src="comments.png" alt="WireFrame">
+        <h3 id="demo">Demo</h3>
+            <p>Please enjoy a poorly generated demo video of the map functionality</p>
+            <p>Android Studio screen grab is ... buggy to say the least, bear with it for a couple of seconds in the beginning </p>
+            <video width="640" height="480" autoplay muted>
+                <source src="demo.mp4" type="video/mp4">
+                Video not supported by browser.
+              </video>
+
+        <h3 id="qoc">QOC - Questions, Options, Criteria</h3>
+            <li>How the user is introduced to the application?</li>
+        <p>At start the user is presented with a splash screen for application introduction.</p>
+        <p>There were was an alternative to open the app either on a login interface or directly in the functionality, neither were pleasant</p>
+        <p>This approach offers the user the most pleasant, profi experience.</p>
+            <li>How we first interact with the user?</li>
+        <p>The functionalities are generated with the use of images which gives the user an intrigue to experiment.</p>
+        <p>An alternative would've been to spell everything outright but that is a poor approach to UI design.</p>
+        <p>Image use as buttons for most of the activities are a design choice with the goal of making the UI as pleasant as possible.</p>
+            <li>What comes first?</li>
+        <p>At first, the user needs to input the destination to start the test drive, afterwards parameters can be changed in real time</p>
+        <p>Another approach would've been to input all parameters first, not just the destination but since the parameters can be changed live, there was no good reason for that choice to be made</p>
+        <p>Requiring very little of the user to start the functionality makes the app easier to use</p>
+
+        <h3 id="Personas">Personas</h3>
+        	
+        <article itemscope itemtype="http://schema.org/Person" class="persona">
+            <div class="personaInfo">
+                <h3>Type: Negative</h3>
+                    <img src="profile-man.png" alt="persona man image" width="30" height="70"/>
+                <div class="personaBackground">				
+                    <h4>Name: <span itemprop="givenName">Cristi</span> <span itemprop="familyName">Unknown</span></h4>
+                        <h5>Background</h5>
+                        <ul>
+                            <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1995-10-23">10/23/1995</time></li>
+                            <li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+                            <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Cluj, Romania</span></li>
+                            <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Marelli</span>, <span itemprop="jobTitle">Software Engineer</span></li>
+                            <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">Al. I. Cuza Uni</span></li>
+                            <li><strong>Technology Level:</strong>Advanced</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="personaDetails">
+                <div class="detailsLeft">
+                    <div class="leftGroup">
+                        <h5>Main Points</h5>
+                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
+                        <ul>
+                            <li>Experience with app testing;</li>
+                            <li>Doesn't need this functionality;</li>
+                            <li>Very blunt and constructive when critiquing;</li>
+                            <li>Despite lacking the need for functionality now, might change in the future;</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Goals</h5>
+                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
+                        <ul>
+                            <li>Wants to help out a friend with feedback</li>
+                            <li>Might be interested in the algorithms behind calculations</li>
+                            <li>Needs ideas for future projects</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Frustrations and Pain Points</h5>
+                        <p>Some of the difficulties the user has with the product.</p>
+                        <ul>
+                            <li>Doesn't like the pedal design;</li>
+                            <li>Item positioning could be improved;</li>
+                            <li>Buggy implementation and view;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div itemprop="description" class="detailsRight">
+                    <h5>Detailed Description</h5>
+                    <p><strong>Negative persona, isn't interested in the product for self use but rather the implementation itself</strong></p>
+                </div>
+            </div>
+            <div class="personaScenarios">
+                <h5>Scenarios</h5>
+                <p>Start the application, check the fuel consumption from Cluj - Iasi.</p>
+                <p>Start the application, check the time elapsed from Cluj - Iasi.</p>
+                <p>Start the application, check the route from Cluj - Iasi.</p>
+            </div>
+        </article>
+        	
+        <article itemscope itemtype="http://schema.org/Person" class="persona">
+            <div class="personaInfo">
+                <h3>Type: Secondary</h3>
+                    <img src="profile-woman.png" alt="persona woman image" width="30" height="70"/>
+                <div class="personaBackground">				
+                    <h4>Name: <span itemprop="givenName">Claudia</span> <span itemprop="familyName">Unknown</span></h4>
+                        <h5>Background</h5>
+                        <ul>
+                            <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1997-06-06">06/06/1997</time></li>
+                            <li><strong>Gender:</strong> <span itemprop="gender">Female</span></li>
+                            <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+                            <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">VT</span>, <span itemprop="jobTitle">Software Engineer</span></li>
+                            <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">Al. I. Cuza Uni</span></li>
+                            <li><strong>Technology Level:</strong>Advanced</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="personaDetails">
+                <div class="detailsLeft">
+                    <div class="leftGroup">
+                        <h5>Main Points</h5>
+                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
+                        <ul>
+                            <li>Experience with relevant field;</li>
+                            <li>Interested in functionality;</li>
+                            <li>Can be very insightful in feedback;</li>
+                            <li>Supportive;</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Goals</h5>
+                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
+                        <ul>
+                            <li>Wants to help out a friend with feedback</li>
+                            <li>Needs real life data of performance</li>
+                            <li>Doesn't dispose of the time required for physical test drive</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Frustrations and Pain Points</h5>
+                        <p>Some of the difficulties the user has with the product.</p>
+                        <ul>
+                            <li>UI a bit cartoonish and uninspired;</li>
+                            <li>Jittery car model move;</li>
+                            <li>Model doesn't respond to the commands instantly, has lag;</li>
+                            <li>Item positioning could be improved;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div itemprop="description" class="detailsRight">
+                    <h5>Detailed Description</h5>
+                    <p><strong>Secondary persona, is interested in the functionality</strong></p>
+                    <p>Might use the app when released for personal reasons and professional reasons</p>
+                    <p>Says she's been looking for a time saver.</p>
+                </div>
+            </div>
+            <div class="personaScenarios">
+                <h5>Scenarios</h5>
+                <p>Start the application, check the fuel consumption on multiple routes.</p>
+                <p>Start the application, discover new routes to travel.</p>
+            </div>
+        </article>
+        	
+        <article itemscope itemtype="http://schema.org/Person" class="persona">
+            <div class="personaInfo">
+                <h3>Type: Served</h3>
+                    <img src="profile-man.png" alt="persona man image" width="30" height="70"/>
+                <div class="personaBackground">				
+                    <h4>Name: <span itemprop="givenName">Nicu</span> <span itemprop="familyName">Unknown</span></h4>
+                        <h5>Background</h5>
+                        <ul>
+                            <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1995-03-10">03/10/1995</time></li>
+                            <li><strong>Gender:</strong> <span itemprop="gender">Male</span></li>
+                            <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+                            <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">VT</span>, <span itemprop="jobTitle">Software Engineer</span></li>
+                            <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">Al. I. Cuza Uni</span></li>
+                            <li><strong>Technology Level:</strong>Advanced</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="personaDetails">
+                <div class="detailsLeft">
+                    <div class="leftGroup">
+                        <h5>Main Points</h5>
+                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
+                        <ul>
+                            <li>Experience with app testing;</li>
+                            <li>Interested in the idea;</li>
+                            <li>Has nothing to gain by holding back criticism;</li>
+                            <li>Works in related field;</li>
+                            <li>Has a good analytical mind;</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Goals</h5>
+                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
+                        <ul>
+                            <li>Wants to help out a friend with feedback</li>
+                            <li>Curious about the polyline usage in the app</li>
+                            <li>Needs ideas for future projects</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Frustrations and Pain Points</h5>
+                        <p>Some of the difficulties the user has with the product.</p>
+                        <ul>
+                            <li>UI can be improved, group and position items better, add animations if possible on button click;</li>
+                            <li>Functionality is buggy in key aspects such as pedal work, fuel consumption calculator, car position update;</li>
+                            <li>Extra functionalities might be needed such as login for car manufacturers and car presets for said manufacturers;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div itemprop="description" class="detailsRight">
+                    <h5>Detailed Description</h5>
+                    <p><strong>Served persona, offers good insights in what the customers need and what competitors have</strong></p>
+                    <p>Extensively used the application to offer accurate feedback, went through a lot of use cases to check for bugs</p>
+                    <p>Offered detailed instructions/ideas on how to fix said bugs</p>
+                </div>
+            </div>
+            <div class="personaScenarios">
+                <h5>Scenarios</h5>
+                <p>Simulates a long drive</p>
+                <p>Simulates a short drive</p>
+                <p>Simulates a perfect conditions drive</p>
+                <p>Simulates a worst conditions drive</p>
+                <p>Simulates a normal drive</p>
+            </div>
+        </article>
+        	
+        <article itemscope itemtype="http://schema.org/Person" class="persona">
+            <div class="personaInfo">
+                <h3>Type: Primary</h3>
+                    <img src="profile-woman.png" alt="persona woman image" width="30" height="70"/>
+                <div class="personaBackground">				
+                    <h4>Name: <span itemprop="givenName">Mimi</span> <span itemprop="familyName">Unknown</span></h4>
+                        <h5>Background</h5>
+                        <ul>
+                            <li><strong>Date of Birth:</strong> <time itemprop="birthDate" datetime="1993-10-29">10/29/1993</time></li>
+                            <li><strong>Gender:</strong> <span itemprop="gender">Female</span></li>
+                            <li itemprop="location" itemscope itemtype="http://schema.org/Place"><strong>Location:</strong> <span itemprop="name">Iasi, Romania</span></li>
+                            <li itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><strong>Work place:</strong> <span itemprop="name">Undisclosed</span>, <span itemprop="jobTitle">Sales Agent</span></li>
+                            <li itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization"><strong>School:</strong>  <span itemprop="name">Al. I. Cuza Uni</span></li>
+                            <li><strong>Technology Level:</strong>Medium</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="personaDetails">
+                <div class="detailsLeft">
+                    <div class="leftGroup">
+                        <h5>Main Points</h5>
+                        <p>Some points extracted from detailed description, that are specific for this persona and the reason we chose it. For example <strong>(phrases are recommended not just simple list of points)</strong>:</p>
+                        <ul>
+                            <li>Works in car sales/showroom;</li>
+                            <li>Interested in functionality;</li>
+                            <li>Can offer real life feedback of customer needs;</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Goals</h5>
+                        <p>Goals are the reasons users perform tasks, not the tasks.</p>
+                        <ul>
+                            <li>Check to see if this product my be useful for her business</li>
+                            <li>Is intrigued by the idea</li>
+                            <li>Wants to compare raw data with simulated data for reliability purposes</li>
+                        </ul>
+                    </div>
+                    <div class="leftGroup">
+                        <h5>Frustrations and Pain Points</h5>
+                        <p>Some of the difficulties the user has with the product.</p>
+                        <ul>
+                            <li>Lack of security options(login, data handling);</li>
+                            <li>UI and functionality bugs;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div itemprop="description" class="detailsRight">
+                    <h5>Detailed Description</h5>
+                    <p><strong>Primary persona, is very interested in the app</strong></p>
+                    <p>Sales agents and car manufacturers are the main targets for the app in terms of customizability </p>
+                    <p>"This could've been a game changer during the pandemic." Maintains the functionality could still be used after</p>
+                </div>
+            </div>
+            <div class="personaScenarios">
+                <h5>Scenarios</h5>
+                <p>Simulate drives for customers.</p>
+                <p>Configure the app to fit every car in the showroom.</p>
+            </div>
+        </article>
 </html>
